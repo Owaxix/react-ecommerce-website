@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
 
 export const Product = () => {
+  const {all_products} = useContext(ShopContext);
   return (
-    <div></div>
+    <div>
+
+    </div>
   )
 }
 export default Product;
