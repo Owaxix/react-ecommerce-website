@@ -1,64 +1,85 @@
-.footer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    background-color: #c4c4c4;
-
+/* Footer container */
+.footer {
+  background-color: #f8f9fa;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
 }
 
-.footer-logo{
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-.footer-logo p{
-    font-size: 46px;
-    font-weight: 700;
-    color: #383838;
+/* Footer logo and website name */
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
-.footerLinks{
-    display: flex;
-    list-style: none;
-    gap: 50px;
-    color: #383838;
-    font-size: 20px;
-}
-.footerLinks li{
-    cursor: pointer;
+.footer-logo img {
+  width: 100px; /* Adjust the size of the logo as needed */
+  height: auto;
 }
 
-.footer-social-icon{
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-}
-.footer-icon-contanier{
-    padding: 10px;
-    padding-bottom: 10px;
-    background: #fbfbfb;
-    border: 1px solid #bebebe;
+.footer-logo p {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 10px;
 }
 
-.footer-copyright{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-    width: 100%;
-    margin-bottom: 30px;
-    color: #1a1a1a;
-    font-size: 20px;
-
+/* Footer links */
+.footerLinks {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
-.footer-copyright hr{
-    width: 80%;
-    border: none;
-    border-radius: 10px;
-    height: 3px;
-    background: #c7c7c7;
+.footerLinks li {
+  cursor: pointer;
+  font-size: 18px;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.footerLinks li:hover {
+  color: #007bff;
+}
+
+/* Social media icons */
+.footer-social-icon {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-icon-contanier {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-icon-contanier img {
+  width: 100%;
+  height: auto;
+}
+
+/* Horizontal line and copyright text */
+.footer-copyright {
+  margin-top: 20px;
+}
+
+.footer-copyright hr {
+  border: 0;
+  width: 100%;
+  border-top: 1px solid #ddd;
+  margin: 20px 0;
+}
+
+.footer-copyright p {
+  font-size: 14px;
+  color: #555;
 }
