@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="footer-logo">
-        <img src={footerLogo} alt="Image Not Found" />
+        <img src={footerLogo} alt="Not Found" />
         <p>StyleNest</p>
         <ul className="footerLinks">
           <li>Company</li>
@@ -20,15 +20,15 @@ const Footer = () => {
 
         <div className="footer-social-icon">
           <div className="footer-icon-contanier">
-            <img src={instagram} alt="Image Not Found" />
+            <img src={instagram} alt="Not Found" />
           </div>
 
           <div className="footer-icon-contanier">
-            <img src={pintester} alt="Image Not Found" />
+            <img src={pintester} alt="Not Found" />
           </div>
 
           <div className="footer-icon-contanier">
-            <img src={whatsapp} alt="Image Not Found" />
+            <img src={whatsapp} alt="Not Found" />
           </div>
         </div>
         <div className="footer-copyright">
