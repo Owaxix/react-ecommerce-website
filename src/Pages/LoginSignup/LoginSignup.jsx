@@ -1,7 +1,7 @@
 import React from "react";
-import "./loginSignup.css";
+import "./LoginSignup.css";
 
-export const loginSignup = () => {
+export const LoginSignup = () => {
   return (
     <div className="loginsignup">
       <div className="login-signup-container">
@@ -17,11 +17,11 @@ export const loginSignup = () => {
         <p className="loginsignup-login">Alredy have an account? <span>Login here</span></p>
         <div className="loginsignup-agree">
           <input type="checkbox" name="" id="" />
-          <p>By continuning, i agree to the terms of use & privacy policy</p>
+          <p>I agree to the terms of use & privacy policy</p>
         </div>
         
       </div>
     </div>
   );
 };
-export default loginSignup;
+export default LoginSignup;

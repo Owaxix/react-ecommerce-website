@@ -68,12 +68,12 @@ export const Navbar = () => {
         </li>
       </ul>
       <div className="nav-login-Icon">
-        <Link style={{ textDecoration: "none" }} to="/Loginsignup">
+        <Link style={{ textDecoration: "none" }} to="/loginsignup">
           {" "}
           <button>Log in</button>
         </Link>
 
-        <Link style={{ textDecoration: "none" }} to="/Cart">
+        <Link style={{ textDecoration: "none" }} to="/cart">
           <img src={cart_Icon} alt="Image Not-Found" />
         </Link>
         <div className="nav-cart-count">0</div>
