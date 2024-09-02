@@ -1,0 +1,126 @@
+.cartitems {
+  width: calc(100% - 140px); /* Full width minus left and right margin */
+
+  padding: 20px 70px; /* Add padding for the content inside */
+  
+}
+
+.cartitems hr {
+  height: 3px;
+  background-color: #e2e2e2;
+  border: 0;
+  margin: 20px 0; /* Add space above and below the line */
+}
+
+.cartitems-format-main {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  gap: 30px; /* Adjusted gap between columns */
+  padding: 20px 0;
+  color: #454545;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.cartitems-format {
+  font-size: 17px;
+  font-weight: 500;
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  gap: 30px;
+  padding: 15px 0; /* Add padding inside each row */
+}
+
+.cartitems-icon {
+  height: 62px;
+  object-fit: cover; /* Ensure the image fits within the given height */
+}
+
+.cartitems-quantity {
+  width: 64px;
+  height: 50px;
+  border: 2px solid #ebebeb;
+  background: white;
+  text-align: center; /* Center the text inside the button */
+  line-height: 50px; /* Vertically center the text */
+}
+
+.cartitems-remove {
+  width: 15px;
+  margin: 0px 40px;
+  cursor: pointer;
+}
+/* Other part of the code css */
+.cartItem-down{
+    display: flex;
+    margin: 100px 0px;
+    
+}
+
+.cartItemTotal{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-right: 200px;
+  gap: 30px;
+}
+
+.cartItem-Total-Item{
+  display: flex;
+  justify-content: space-between;
+  padding: 15px , 0px;
+
+}
+.cartItemTotal button{
+  width: 262px;
+  height: 58px;
+  outline: none;
+  border: none;
+  background-color: #ff5a5a;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+
+}
+
+.catItem-Promocode{
+  flex: 1;
+  font-size: 16px;
+  font-weight:500;
+  
+}
+
+.catItem-Promocode p{
+  color: #555;
+}
+
+.cartItem-promobox{
+  width: 504px;
+  margin-top: 15px;
+  padding-left: 20px;
+  height: 58px;
+  background: #aeaeae;
+}
+
+.cartItem-promobox input{
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 16px;
+  width: 330px;
+  height: 50px;
+
+}
+
+.cartItem-promobox button{
+  width: 170px;
+  height: 58px;
+  font-size: 16px;
+  background: black;
+  color: white;
+  cursor: pointer;
+  
+}
