@@ -1,6 +1,6 @@
 .offers {
-  width: 100%; /* Full width for better responsiveness */
-  max-width: 1200px; /* Limit maximum width */
+  width: 100%;
+  max-width: 1200px;
   height: 65vh;
   display: flex;
   margin: 180px auto 150px auto; /* Added margin-top for spacing from the top */
@@ -16,26 +16,26 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 20px; /* Ensure content is not too close to the edge */
+  padding-left: 20px;
 }
 
 .OfferLeft h1 {
   color: #f1f1f1;
   font-size: 64px; /* Slightly smaller for better spacing */
   font-weight: 700;
-  margin: 0; /* Remove default margin */
+  margin: 0;
 }
 
 .OfferLeft p {
   color: #f1f1f1;
   font-size: 22px;
   font-weight: 600;
-  margin-top: 10px; /* Spacing between paragraph and heading */
+  margin-top: 10px;
 }
 
 .OfferLeft button {
-  width: 250px; /* Slightly reduced width for better fit */
-  height: 60px; /* Reduced height for better balance */
+  width: 250px;
+  height: 60px;
   border-radius: 30px;
   background: #988686;
   border: none;
@@ -53,12 +53,81 @@
   flex: 1;
   display: flex;
   align-items: center;
-  justify-content: center; /* Center image within its container */
-  padding-right: 20px; /* Ensure image is not too close to the edge */
+  justify-content: center;
+  padding-right: 20px;
 }
 
 .OffersRight img {
   max-width: 100%;
   height: 100%;
-  border-radius: 10px; /* Optional: Add slight rounding to the image */
+  border-radius: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .offers {
+    padding: 0 20px; /* Reduce padding for medium screens */
+  }
+
+  .OfferLeft h1 {
+    font-size: 50px; /* Adjust font size for medium screens */
+  }
+
+  .OfferLeft p {
+    font-size: 18px; /* Adjust font size for medium screens */
+  }
+
+  .OfferLeft button {
+    width: 200px; /* Adjust width for medium screens */
+    height: 50px; /* Adjust height for medium screens */
+    font-size: 18px; /* Adjust font size for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .offers {
+    flex-direction: column; /* Stack elements vertically */
+    height: auto; /* Allow height to adjust based on content */
+    margin: 100px auto; /* Adjust margin for small screens */
+    padding: 0 10px; /* Reduce padding for smaller screens */
+  }
+
+  .OfferLeft, .OffersRight {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .OfferLeft h1 {
+    font-size: 36px; /* Further adjust font size for small screens */
+  }
+
+  .OfferLeft p {
+    font-size: 16px; /* Further adjust font size for small screens */
+  }
+
+  .OfferLeft button {
+    width: 180px; /* Adjust width for small screens */
+    height: 45px; /* Adjust height for small screens */
+    font-size: 16px; /* Adjust font size for small screens */
+  }
+
+  .OffersRight img {
+    max-width: 100%;
+    height: auto; /* Allow image height to adjust based on width */
+  }
+}
+
+@media (max-width: 480px) {
+  .OfferLeft h1 {
+    font-size: 28px; /* Further reduce font size for very small screens */
+  }
+
+  .OfferLeft p {
+    font-size: 14px; /* Further reduce font size for very small screens */
+  }
+
+  .OfferLeft button {
+    width: 150px; /* Further reduce width for very small screens */
+    height: 40px; /* Further reduce height for very small screens */
+    font-size: 14px; /* Further reduce font size for very small screens */
+  }
 }

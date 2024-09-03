@@ -1,4 +1,4 @@
-.breadcrums{
+.breadcrums {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -7,4 +7,25 @@
     font-weight: 600;
     margin: 20px 50px;
     text-transform: capitalize;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .breadcrums {
+        margin: 20px 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .breadcrums {
+        font-size: 14px;
+        margin: 15px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .breadcrums {
+        font-size: 13px;
+        margin: 10px 15px;
+    }
 }

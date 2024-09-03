@@ -1,22 +1,20 @@
 .cartitems {
-  width: calc(100% - 140px); /* Full width minus left and right margin */
-
-  padding: 20px 70px; /* Add padding for the content inside */
-  
+  width: calc(100% - 140px);
+  padding: 20px 70px;
 }
 
 .cartitems hr {
   height: 3px;
   background-color: #e2e2e2;
   border: 0;
-  margin: 20px 0; /* Add space above and below the line */
+  margin: 20px 0;
 }
 
 .cartitems-format-main {
   display: grid;
   grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 1fr;
   align-items: center;
-  gap: 30px; /* Adjusted gap between columns */
+  gap: 30px;
   padding: 20px 0;
   color: #454545;
   font-size: 18px;
@@ -30,12 +28,12 @@
   grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 1fr;
   align-items: center;
   gap: 30px;
-  padding: 15px 0; /* Add padding inside each row */
+  padding: 15px 0;
 }
 
 .cartitems-icon {
   height: 62px;
-  object-fit: cover; /* Ensure the image fits within the given height */
+  object-fit: cover;
 }
 
 .cartitems-quantity {
@@ -43,8 +41,8 @@
   height: 50px;
   border: 2px solid #ebebeb;
   background: white;
-  text-align: center; /* Center the text inside the button */
-  line-height: 50px; /* Vertically center the text */
+  text-align: center;
+  line-height: 50px;
 }
 
 .cartitems-remove {
@@ -52,14 +50,13 @@
   margin: 0px 40px;
   cursor: pointer;
 }
-/* Other part of the code css */
-.cartItem-down{
-    display: flex;
-    margin: 100px 0px;
-    
+
+.cartItem-down {
+  display: flex;
+  margin: 100px 0px;
 }
 
-.cartItemTotal{
+.cartItemTotal {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -67,11 +64,10 @@
   gap: 30px;
 }
 
-.cartItem-Total-Item{
+.cartItem-Total-Item {
   display: flex;
   justify-content: space-between;
-  padding: 15px , 0px;
-
+  padding: 15px 0px;
 }
 .cartItemTotal button{
   margin-top: 10px;
@@ -84,44 +80,138 @@
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
-
 }
 
-.catItem-Promocode{
+.catItem-Promocode {
   flex: 1;
   font-size: 16px;
-  font-weight:500;
-  
+  font-weight: 500;
 }
 
-.catItem-Promocode p{
+.catItem-Promocode p {
   color: #555;
 }
 
-.cartItem-promobox{
+.cartItem-promobox {
   width: 504px;
   margin-top: 15px;
   padding-left: 20px;
   height: 58px;
   background: #aeaeae;
+  display: flex;
+  justify-content: space-between; /* Ensure button stays aligned left */
 }
 
-.cartItem-promobox input{
+.cartItem-promobox input {
   border: none;
   outline: none;
   background: transparent;
   font-size: 16px;
   width: 330px;
   height: 50px;
-
 }
 
-.cartItem-promobox button{
+.cartItem-promobox button {
   width: 170px;
   height: 58px;
   font-size: 16px;
   background: black;
   color: white;
   cursor: pointer;
-  
+  margin-left: 10px; /* Add slight margin if needed */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .cartitems {
+    padding: 20px 40px;
+    width: calc(100% - 80px);
+  }
+
+  .cartItemTotal {
+    margin-right: 100px;
+  }
+
+  .cartItem-promobox {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .cartitems {
+    padding: 15px 20px;
+    width: calc(100% - 40px);
+  }
+
+  .cartitems-format-main, .cartitems-format {
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 16px;
+    gap: 20px;
+  }
+
+  .cartItemTotal {
+    margin-right: 50px;
+  }
+
+  .cartItemTotal button {
+    width: 200px;
+    height: 50px;
+  }
+
+  .cartItem-promobox {
+    padding-left: 10px;
+    width: 100%;
+    flex-direction: column; /* Stack elements vertically if necessary */
+    align-items: flex-start; /* Keep items aligned to the left */
+  }
+
+  .cartItem-promobox input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .cartItem-promobox button {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .cartitems {
+    padding: 10px 10px;
+    width: calc(100% - 20px);
+  }
+
+  .cartitems-format-main, .cartitems-format {
+    grid-template-columns: 1fr;
+    font-size: 14px;
+    gap: 10px;
+  }
+
+  .cartItemTotal {
+    margin-right: 20px;
+    gap: 20px;
+  }
+
+  .cartItemTotal button {
+    width: 100%;
+    height: 45px;
+  }
+
+  .cartItem-promobox {
+    padding-left: 5px;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cartItem-promobox input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .cartItem-promobox button {
+    width: 100%;
+    margin-left: 0;
+  }
 }
