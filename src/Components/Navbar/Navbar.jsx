@@ -80,6 +80,7 @@ export const Navbar = () => {
         </Link>
         <div className="nav-cart-count">{getTotalCartItem()}</div>
       </div>
+      <img width="30 " height="30" src="https://img.icons8.com/ios-filled/50/menu--v1.png" alt="menu--v1"/>
     </div>
   );
 };

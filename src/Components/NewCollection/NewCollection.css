@@ -38,7 +38,46 @@
   margin: 0; /* Center images inside the grid items */
 }
 
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .newCollection h1 {
+    font-size: 35px;
+  }
 
+  .newCollection-item {
+    grid-template-columns: repeat(3, minmax(0, 1fr)); /* 3 columns */
+    column-gap: 40px; /* Adjust horizontal gap */
+    row-gap: 40px; /* Adjust vertical gap */
+  }
+}
 
+@media (max-width: 768px) {
+  .newCollection h1 {
+    font-size: 30px;
+  }
 
+  .newCollection-item {
+    grid-template-columns: repeat(2, minmax(0, 1fr)); /* 2 columns */
+    column-gap: 30px; /* Adjust horizontal gap */
+    row-gap: 30px; /* Adjust vertical gap */
+    padding: 0 10px; /* Adjust padding for smaller screens */
+  }
+}
 
+@media (max-width: 480px) {
+  .newCollection h1 {
+    font-size: 25px;
+  }
+
+  .newCollection-item {
+    grid-template-columns: repeat(1, minmax(0, 1fr)); /* 1 column */
+    column-gap: 20px; /* Adjust horizontal gap */
+    row-gap: 20px; /* Adjust vertical gap */
+    padding: 0 5px; /* Adjust padding for smaller screens */
+  }
+
+  .newCollection hr {
+    width: 100px; /* Adjust width of the horizontal rule */
+    height: 3px; /* Adjust height of the horizontal rule */
+  }
+}

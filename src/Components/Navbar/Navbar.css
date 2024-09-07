@@ -1,8 +1,11 @@
+/* Base styles */
 .Navbar {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
   height: 80px;
   background-color: #f5f7ed;
+  padding: 0 20px;
 }
 
 .navLogo {
@@ -69,6 +72,7 @@
 .nav-login-Icon button:hover {
   background-color: #4ac548;
 }
+
 .nav-login-Icon button:active {
   background-color: rgb(31, 163, 88);
 }
@@ -89,4 +93,70 @@
   background-color: #5cd85a;
   font-size: 14px;
   color: white;
+}
+
+.menu-icon {
+  display: none;
+  align-items: center;
+  cursor: pointer;
+}
+
+.menu-icon img {
+  width: 30px;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .navLogo img {
+    width: 50px;
+  }
+
+  .navLogo p {
+    font-size: 24px;
+  }
+
+  .nav-login-Icon button {
+    width: 100px;
+    height: 34px;
+    font-size: 14px;
+  }
+
+  .nav-login-Icon img {
+    width: 30px;
+  }
+
+  .nav-cart-count {
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Nav-menu,
+  .nav-login-Icon {
+    display: none;
+  }
+
+  .menu-icon {
+    display: flex;
+  }
+
+  .navLogo img {
+    width: 40px;
+  }
+
+  .navLogo p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navLogo img {
+    width: 30px;
+  }
+
+  .navLogo p {
+    font-size: 16px;
+  }
 }
