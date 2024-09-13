@@ -24,18 +24,18 @@
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr)); /* 4 columns, ensuring even distribution */
   column-gap: 60px; /* Horizontal gap between grid items increased to 60px */
-  row-gap: 60px; /* Vertical gap between rows also set to 60px */
-  width: calc(100% - 120px); /* Adjust width to remove excess margins */
-  max-width: 1200px; /* Limit max width for better centering */
-  padding: 0 20px; /* Padding for centering */
-  margin: 0; /* Center the grid container */
+  row-gap: 60px; 
+  width: calc(100% - 120px); 
+  max-width: 1200px; 
+  padding: 0 20px; 
+  margin: 0; 
 }
 
 .newCollection-item img {
-  width: 100%; /* Make sure images fit within the grid items */
-  max-width: 300px; /* Reduce the size of the images */
-  height: auto; /* Maintain aspect ratio */
-  margin: 0; /* Center images inside the grid items */
+  width: 100%; 
+  max-width: 300px; 
+  height: auto; 
+  margin: 0; 
 }
 
 
