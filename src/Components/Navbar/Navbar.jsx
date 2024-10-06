@@ -70,17 +70,33 @@ export const Navbar = () => {
         </li>
       </ul>
       <div className="nav-login-Icon">
-        <Link style={{ textDecoration: "none" }} to="/loginsignup">
-          {" "}
-          <button>Log in</button>
-        </Link>
+        {localStorage.getItem("auth-token") ? (
+          <button
+            onClick={() => {
+              localStorage.removeItem("auth-token");
+              window.location.replace("/");
+            }}
+          >
+            Logout
+          </button>
+        ) : (
+          <Link style={{ textDecoration: "none" }} to="/loginsignup">
+            {" "}
+            <button>Log in</button>
+          </Link>
+        )}
 
         <Link style={{ textDecoration: "none" }} to="/cart">
           <img src={cart_Icon} alt="Not-Found" />
         </Link>
         <div className="nav-cart-count">{getTotalCartItem()}</div>
       </div>
-      <img width="30 " height="30" src="https://img.icons8.com/ios-filled/50/menu--v1.png" alt="menu--v1"/>
+      <img
+        width="30 "
+        height="30"
+        src="https://img.icons8.com/ios-filled/50/menu--v1.png"
+        alt="menu--v1"
+      />
     </div>
   );
 };

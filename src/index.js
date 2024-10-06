@@ -11,4 +11,12 @@ root.render(
       <App />
     </ShopContextProvider>
   </React.StrictMode>
+
+
+
+
+
+
+
+
 );

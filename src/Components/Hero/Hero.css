@@ -1,148 +1,148 @@
 .hero {
-    height: 100vh;
-    background: linear-gradient(#eeeeed, #656464);
-    display: flex;
+  height: 100vh;
+  background: linear-gradient(#eeeeed, #656464);
+  display: flex;
 }
 
 .hero-left {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
-    padding-left: 180px;
-    line-height: 1.1;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding-left: 180px;
+  line-height: 1.1;
 }
 
 .hero-left h2 {
-    color: rgb(56, 56, 56);
-    font-size: 24px;
-    font-weight: 600;
+  color: rgb(56, 56, 56);
+  font-size: 24px;
+  font-weight: 600;
 }
 
 .hero-left p {
-    color: rgb(42, 42, 42);
-    font-size: 80px;
+  color: rgb(42, 42, 42);
+  font-size: 80px;
 }
 
 .hand-hand-Icon {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .hand-hand-Icon img {
-    width: 105px;
+  width: 105px;
 }
 
 .hero-latest-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
-    width: 310px;
-    height: 70px;
-    border-radius: 75px;
-    margin-top: 30px;
-    background-color: #5cd85a;
-    color: aliceblue;
-    font-size: 22px;
-    font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  width: 310px;
+  height: 70px;
+  border-radius: 75px;
+  margin-top: 30px;
+  background-color: #5c4e4e;
+  color: aliceblue;
+  font-size: 22px;
+  font-weight: 500;
 }
 
 .heroright {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .heroright img {
-    width: 80%;
-    max-width: 450px;
+  width: 80%;
+  max-width: 450px;
 }
 
 /* Responsive adjustments */
 @media (max-width: 1200px) {
-    .hero-left {
-        padding-left: 120px;
-    }
+  .hero-left {
+    padding-left: 120px;
+  }
 
-    .hero-left h2 {
-        font-size: 22px;
-    }
+  .hero-left h2 {
+    font-size: 22px;
+  }
 
-    .hero-left p {
-        font-size: 70px;
-    }
+  .hero-left p {
+    font-size: 70px;
+  }
 
-    .hero-latest-btn {
-        width: 280px;
-        height: 60px;
-        font-size: 20px;
-    }
+  .hero-latest-btn {
+    width: 280px;
+    height: 60px;
+    font-size: 20px;
+  }
 
-    .heroright img {
-        width: 70%;
-        max-width: 400px;
-    }
+  .heroright img {
+    width: 70%;
+    max-width: 400px;
+  }
 }
 
 @media (max-width: 768px) {
-    .hero {
-        flex-direction: column;
-        padding: 20px;
-        height: auto;
-    }
+  .hero {
+    flex-direction: column;
+    padding: 20px;
+    height: auto;
+  }
 
-    .hero-left {
-        padding-left: 0;
-        align-items: center;
-        text-align: center;
-        gap: 15px;
-    }
+  .hero-left {
+    padding-left: 0;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+  }
 
-    .hero-left h2 {
-        font-size: 20px;
-    }
+  .hero-left h2 {
+    font-size: 20px;
+  }
 
-    .hero-left p {
-        font-size: 60px;
-    }
+  .hero-left p {
+    font-size: 60px;
+  }
 
-    .hand-hand-Icon img {
-        width: 80px;
-    }
+  .hand-hand-Icon img {
+    width: 80px;
+  }
 
-    .hero-latest-btn {
-        width: 250px;
-        height: 55px;
-        font-size: 18px;
-    }
+  .hero-latest-btn {
+    width: 250px;
+    height: 55px;
+    font-size: 18px;
+  }
 
-    .heroright img {
-        width: 60%;
-        max-width: 350px;
-    }
+  .heroright img {
+    width: 60%;
+    max-width: 350px;
+  }
 }
 
 @media (max-width: 480px) {
-    .hero-left p {
-        font-size: 50px;
-    }
+  .hero-left p {
+    font-size: 50px;
+  }
 
-    .hand-hand-Icon img {
-        width: 70px;
-    }
+  .hand-hand-Icon img {
+    width: 70px;
+  }
 
-    .hero-latest-btn {
-        width: 220px;
-        height: 50px;
-        font-size: 16px;
-    }
+  .hero-latest-btn {
+    width: 220px;
+    height: 50px;
+    font-size: 16px;
+  }
 
-    .heroright img {
-        width: 80%;
-        max-width: 300px;
-    }
+  .heroright img {
+    width: 80%;
+    max-width: 300px;
+  }
 }
