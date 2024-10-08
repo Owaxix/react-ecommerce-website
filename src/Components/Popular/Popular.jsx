@@ -7,10 +7,16 @@ export const Popular = () => {
 
   const [popularProduct, setPopularProduct] = useState([]);
 
-  useEffect(()=>{
+  useEffect(() => {
     fetch("http://localhost:4000/popularinwomen")
-    .then((data)=>setPopularProduct(data));
-  },[])
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data); // Log the data
+        setPopularProduct(data);
+      })
+      .catch((error) => console.error('Error fetching data:', error));
+  }, []);
+  
 
   return (
     <div className='popular'>

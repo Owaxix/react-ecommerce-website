@@ -4,7 +4,7 @@ import "./LoginSignup.css";
 export const LoginSignup = () => {
   const [state, setState] = useState("Login");
   const [formData, setFormData] = useState({
-    username: "",
+    name: "",
     password: "",
     email: "",
   });
@@ -12,14 +12,14 @@ export const LoginSignup = () => {
   const changeHandeler = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
+  
 
   const login = async () => {
-    console.log("Execuited login function", formData);
+    console.log("Executed login function", formData);
     let responseData;
     await fetch("http://localhost:4000/login", {
       method: "POST",
       headers: {
-        Accept: "application/form-data",
         "Content-Type": "application/json",
       },
       body: JSON.stringify(formData),
@@ -35,12 +35,11 @@ export const LoginSignup = () => {
   }; 
 
   const signUp = async () => {
-    console.log("Execuited Sign Up function", formData);
+    console.log("Executed Sign Up function", formData);
     let responseData;
     await fetch("http://localhost:4000/signUp", {
       method: "POST",
       headers: {
-        Accept: "application/form-data",
         "Content-Type": "application/json",
       },
       body: JSON.stringify(formData),
@@ -62,8 +61,8 @@ export const LoginSignup = () => {
         <div className="login-signup-fields">
           {state === "Sign up" ? (
             <input
-              name="username"
-              value={formData.username}
+              name="name"
+              value={formData.name}
               onChange={changeHandeler}
               type="text"
               placeholder="Your name"

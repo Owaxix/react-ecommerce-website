@@ -15,11 +15,28 @@ const ShopContextProvider = (props) => {
   const [all_products, setAllProducts] = useState([]);
   const [cartItems, setCartItems] = useState(getDefaultedCart());
 
-  useEffect(()=>{
+  useEffect(() => {
+    // Fetch all products
     fetch("http://localhost:4000/allproducts")
-    .then((response)=>response.json())
-    .then((data)=>setAllProducts(data))
-  },[])
+      .then((response) => response.json())
+      .then((data) => setAllProducts(data));
+  
+    // Fetch cart items if user is authenticated
+    if (localStorage.getItem("auth-token")) {
+      fetch("http://localhost:4000/getcart", {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "auth-token": `${localStorage.getItem("auth-token")}`,  // Corrected template literal
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({}) // Use an empty JSON object if no body is needed
+      })
+        .then((response) => response.json())
+        .then((data) => setCartItems(data));
+    }
+  }, []);
+  
 
   const addToCart = (itemId) => {
     setCartItems((prev) => {
