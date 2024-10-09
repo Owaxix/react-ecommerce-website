@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./LoginSignup.css";
 
 export const LoginSignup = () => {
-  const [state, setState] = useState("Login");
+  const [state, setState] = useState("Login"); 
   const [formData, setFormData] = useState({
     name: "",
     password: "",
@@ -12,7 +12,6 @@ export const LoginSignup = () => {
   const changeHandeler = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
-  
 
   const login = async () => {
     console.log("Executed login function", formData);
@@ -32,7 +31,7 @@ export const LoginSignup = () => {
     } else {
       alert(responseData.error);
     }
-  }; 
+  };
 
   const signUp = async () => {
     console.log("Executed Sign Up function", formData);
@@ -52,7 +51,7 @@ export const LoginSignup = () => {
     } else {
       alert(responseData.error);
     }
-  }; 
+  };
 
   return (
     <div className="loginsignup">
@@ -88,14 +87,15 @@ export const LoginSignup = () => {
 
         <button
           onClick={() => {
-            state === "login" ? login() : signUp();
+            state === "Login" ? login() : signUp(); // Updated the condition to "Login"
           }}
         >
           Continue
         </button>
+
         {state === "Sign up" ? (
           <p className="loginsignup-login">
-            Alredy have an account?{" "}
+            Already have an account?{" "}
             <span
               onClick={() => {
                 setState("Login");
